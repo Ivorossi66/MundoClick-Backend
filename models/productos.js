@@ -4,6 +4,7 @@ const ProductoSchema = Schema({
     titulo: { type: String, required: [true, 'El titulo es obligatorio'], unique: true },
     descripcion: { type: String },
     precio: { type: Number, default: 0 },
+    estado: { type: Boolean, required: true},
     img: { type: String },
     categoria: { type: String, required: [true, 'La categoria es obligatoria'] },
     stock: { type: Number, default: 0 },
